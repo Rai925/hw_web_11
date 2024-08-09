@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "contacts-api"
+version = "0.1.0"
+description = ""
+authors = ["Rai <154880397+Rai925@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.112.0"}
+sqlalchemy = "^2.0.32"
+psycopg2-binary = "^2.9.9"
+pydantic = "^2.8.2"
+alembic = "^1.13.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
